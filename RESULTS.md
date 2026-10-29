@@ -62,9 +62,6 @@ Three approaches were evaluated on the combined test set: Always-off, Usage-prof
 | Usage-profile | 33.361 | 166.790 | 0.018 | 371.022 | 31687 | 651223 |
 | Random Forest | 25.160 | 141.299 | 0.295 | 297.896 | 31687 | 651223 |
 
-
-![Model Result](img/image-5.png)
-
 The Random Forest achieved the lowest RMSE, highest R², and lowest active-period MAE, indicating better performance in identifying and estimating washing-machine activity. Although the Always-off baseline achieved the lowest overall MAE, this is largely because the washing machine remains inactive for most timestamps.
 
 ## 4. Household-Level Test Results
@@ -92,7 +89,7 @@ A 70/15/15 chronological split was used for each household, with 70% of the data
 | 9 | Random Forest | 16.318 | 125.386 | 0.437 | 351.469 | 3021 | 101518 |
 | 9 | Usage-profile | 29.164 | 166.738 | 0.004 | 506.103 | 3021 | 101518 |
 
-![Household-Level Test Results](img/image-6.png)
+
 
 Random Forest generally improved RMSE and active-period MAE across households, although performance varied by household. House 6 achieved the strongest Random Forest performance with an R² of 0.601 and an active-period MAE of 176.528 W.
 
