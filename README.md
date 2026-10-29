@@ -1,4 +1,5 @@
 # REFIT Energy Analysis and Washing-Machine Disaggregation
+### By: Tushar Joshi 23102174 JIIT Noida
 
 ## Project Overview
 
