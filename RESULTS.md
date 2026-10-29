@@ -1,4 +1,4 @@
-##RESULTS
+
 
 ## 1. Data Cleaning and Preprocessing
 
@@ -57,10 +57,6 @@ The EDA shows how washing-machine usage varies across households and time. The a
 
 Three approaches were evaluated on the combined test set: Always-off, Usage-profile, and Random Forest.
 
-Model	MAE_W	RMSE_W	R2	Active_MAE_W	Active_minutes	Test_minutes
-0	Always-off	19.704	169.455	-0.014	404.114	31687	651223
-1	Usage-profile	33.361	166.790	0.018	371.022	31687	651223
-2	Random Forest	25.160	141.299	0.295	297.896	31687	651223
 
 ![Model Result](img/image-5.png)
 
@@ -70,25 +66,6 @@ The Random Forest achieved the lowest RMSE, highest R², and lowest active-perio
 
 A 70/15/15 chronological split was used for each household, with 70% of the data for training, 15% for validation, and 15% for testing. This preserves the temporal ordering of the REFIT data and prevents future observations from being used to predict earlier observations.
 
-House	Model	MAE_W	RMSE_W	R2	Active_MAE_W	Active_minutes	Test_minutes
-0	1	Always-off	10.286	131.549	-0.006	493.310	2399	115172
-2	1	Random Forest	11.596	97.388	0.449	279.428	2399	115172
-1	1	Usage-profile	19.242	130.844	0.005	473.073	2399	115172
-3	2	Always-off	20.316	183.129	-0.012	387.051	5065	96948
-5	2	Random Forest	32.212	159.918	0.228	272.297	5065	96948
-4	2	Usage-profile	34.148	181.397	0.007	364.007	5065	96948
-6	3	Always-off	28.177	202.995	-0.020	491.230	6568	114542
-8	3	Random Forest	34.220	162.432	0.347	335.454	6568	114542
-7	3	Usage-profile	47.873	199.210	0.018	444.656	6568	114542
-9	5	Always-off	34.515	201.935	-0.030	326.064	12807	121203
-11	5	Random Forest	46.623	191.433	0.074	296.894	12807	121203
-10	5	Usage-profile	53.543	196.078	0.029	290.481	12807	121203
-12	6	Always-off	6.358	95.714	-0.004	354.008	1827	101840
-14	6	Random Forest	6.865	60.319	0.601	176.528	1827	101840
-13	6	Usage-profile	12.419	95.393	0.002	332.972	1827	101840
-15	9	Always-off	15.947	167.851	-0.009	533.678	3021	101518
-17	9	Random Forest	16.318	125.386	0.437	351.469	3021	101518
-16	9	Usage-profile	29.164	166.738	0.004	506.103	3021	101518
 
 ![Household-Level Test Results](img/image-6.png)
 
